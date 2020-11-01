@@ -36,7 +36,7 @@ or download [pandoc-2.11.0.4-macOS.pkg](https://github.com/jgm/pandoc/releases/d
 
 Download script, put it in the directory containing all the markdown files, and run.
 
-- Input: All files with .md suffix except `README.md` in current directory and its child.
+- Input: All files with .md suffix except `README.md` in current directory and child.
 - Output: `book.epub` in current directory.
 
 ## 简介
@@ -71,5 +71,5 @@ Download script, put it in the directory containing all the markdown files, and 
 
 下载脚本，将其放入包含所有markdown文件的目录中，然后运行。
 
-- 输入：当前目录及其子目录中所有后缀为.md的文件，除了`README.md`。
+- 输入：当前目录及子目录中所有后缀为.md的文件，除了`README.md`。
 - 输出：当前目录的`book.epub`。
