@@ -41,7 +41,7 @@ Download script, put it in the directory containing all the markdown files, and 
 
 ## 简介
 
-我在寻找用markdown制作电子书的方法的过程中，发现了使用pandoc从markdown创建epub书籍的模板。Pandoc是一个非常强大的文档格式转换工具，但是，Pandoc不支持模糊文件名（带有通配符）或目录作为输入。如果有多个输入文件，则需要在命令中键入每个文件。所以，我写了脚本来做这件事。
+我在寻找用markdown制作电子书的方法的过程中，发现了使用pandoc从markdown创建epub书籍的[模板](https://github.com/johnpaulada/pandoc-markdown-book-template)。Pandoc是一个非常强大的文档格式转换工具，但是，Pandoc不支持模糊文件名（带有通配符）或目录作为输入。如果有多个输入文件，则需要在命令中键入每个文件。所以，我写了脚本来做这件事。
 
 我一开始使用Python3。然后我写了批处理脚本(BAT)来实现同样的效果。也许以后我会把它打包，让它更像一个完整的程序，而不仅仅是脚本。
 
