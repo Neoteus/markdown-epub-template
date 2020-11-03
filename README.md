@@ -32,12 +32,17 @@ or download [pandoc-2.11.0.4-macOS.pkg](https://github.com/jgm/pandoc/releases/d
 
 [pandoc-2.11.0.4-windows-x86_64.msi](https://github.com/jgm/pandoc/releases/download/2.11.0.4/pandoc-2.11.0.4-windows-x86_64.msi)
 
-## 2. Download and run script
+## 2. Create Book
 
-Download script, put it in the directory containing all the markdown files, and run.
+1. Change to this directory.
+2. Replace the content of `title.md` and `images/cover.png` with your own.
+3. Write markdown (NO SPACE IN FILE NAME) in `contents` directory, or create directories and subdirectories as you like.
+4. Put other images into `images` directory.
+5. Run `export-epub.bat` or other script.
 
-- Input: All files with .md suffix except `README.md` in current directory and child.
-- Output: `book.epub` in current directory.
+Your book will be exported as `book.epub`.
+
+**Note:** If multiple input files are given, pandoc will concatenate them all (with blank lines between them) **in the order of file list** before parsing.
 
 ## 简介
 
@@ -67,9 +72,14 @@ Download script, put it in the directory containing all the markdown files, and 
 
 [pandoc-2.11.0.4-windows-x86_64.msi](https://github.com/jgm/pandoc/releases/download/2.11.0.4/pandoc-2.11.0.4-windows-x86_64.msi)
 
-## 2. 下载并运行脚本
+## 2. 创建书籍
 
-下载脚本，将其放入包含所有markdown文件的目录中，然后运行。
+1. 切换到此目录。
+2. 用你自己的内容替换`title.md`和封面图像`images/cover.png`。
+3. 在`contents`目录中写markdown（文件名不能带空格），或者按你的喜好创建目录和子目录。
+4. 将其他图像放入“images”目录。
+5. 运行`export-epub`或者其他脚本。
 
-- 输入：当前目录及子目录中所有后缀为.md的文件，除了`README.md`。
-- 输出：当前目录的`book.epub`。
+输出为`book.epub`。
+
+注意: 如果给定了多个输入文件，在解析之前pandoc将按照 **文件列表的顺序** 将它们全部连接起来（之间有空行）。
