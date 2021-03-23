@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import os
 
-OUTPUT_FILE = './book.epub'
-TITLE_FILE = './title.md'
-EMBED_FONT = ['./font/open-sans-v17-latin-ext_latin-*.woff2']
+OUTPUT_FILE = 'book.epub'
+TITLE_FILE = 'title.md'
+EMBED_FONT = ['font/open-sans-v17-latin-ext_latin-*.woff2']
 
-def ls_md(path='./markdown'):
+def ls_md(path='markdown'):
     md = []
     with os.scandir(path) as entrys:
         for e in entrys:
