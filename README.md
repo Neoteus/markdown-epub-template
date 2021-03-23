@@ -1,3 +1,3 @@
 # Python Examples
 
-Keep some short Python script I write.
+Keep some short Python scripts I write.
