@@ -16,17 +16,15 @@ def ls_md(path='./markdown'):
     return md
 
 args = ['--toc']
-if EMBED_FONT:
-    for i in EMBED_FONT:
-        args.append(f'--epub-embed-font={i}')
+for i in EMBED_FONT:
+    args.append(f'--epub-embed-font={i}')
 if OUTPUT_FILE:
     args.append('-o')
     args.append(OUTPUT_FILE)
 if TITLE_FILE:
     args.append(TITLE_FILE)
 content_md = ls_md()
-if len(content_md) > 0:
-    args += content_md
+args += content_md
 
 print('Input MarkDonw:\n  title.md')
 for i in content_md:
