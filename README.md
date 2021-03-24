@@ -1,3 +1,5 @@
 # Python Examples
 
-Keep some short Python scripts I write.
+> 我不造轮子，我只是代码的搬运工。
+
+平时为了解决问题，写的简短的代码。考虑到以后也许还会用到，保存在这里。
