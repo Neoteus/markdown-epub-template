@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 import os
+import subprocess
 
-OUTPUT_FILE = 'book.epub'
-TITLE_FILE = 'title.md'
-EMBED_FONT = ['font/open-sans-v17-latin-ext_latin-*.woff2']
+OUTPUT = 'book.epub'
+TITLE = 'title.md'
+CONTENT = 'markdown'
 
-def ls_md(path='markdown'):
+def ls_md(path):
     md = []
     with os.scandir(path) as entrys:
         for e in entrys:
@@ -14,20 +15,16 @@ def ls_md(path='markdown'):
             elif e.is_dir():
                 md += ls_md(e.path)
     return md
+contents = ls_md(CONTENT)
 
-args = ['--toc']
-for i in EMBED_FONT:
-    args.append(f'--epub-embed-font={i}')
-if OUTPUT_FILE:
-    args.append('-o')
-    args.append(OUTPUT_FILE)
-if TITLE_FILE:
-    args.append(TITLE_FILE)
-content_md = ls_md()
-args += content_md
+args = ['pandoc', '--toc']
+args.append('-o')
+args.append(OUTPUT)
+args.append(TITLE)
+args += contents
 
-print('Input MarkDonw:\n  title.md')
-for i in content_md:
+print('Input MarkDown (the order is listed below):\n  {}'.format(TITLE))
+for i in contents:
     print('  ' + i)
-os.system('pandoc ' + ' '.join(args))
-print(f'Output EPUB:\n  {OUTPUT_FILE}')
+subprocess.Popen(args)
+print('\nOutput EPUB:\n  {}'.format(OUTPUT))
