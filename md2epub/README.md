@@ -76,7 +76,7 @@ Your book will be exported as `book.epub`.
 
 1. 切换到此目录。
 2. 编辑`title.md`，替换封面图像`resource/cover.png`。
-3. 在`markdown`目录中写markdown**（文件名不能含有空格）**，或者按你的喜好创建子目录。
+3. 在`markdown`目录中写markdown **（文件名不能含有空格）** ，或者按你的喜好创建子目录。
 4. 将其他图像放入`resource`目录。
 5. 运行脚本。
 
