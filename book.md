@@ -2,13 +2,12 @@
 title: 史记（节选）
 authors: 司马迁
 publisher:
-producer: Nepteus
 tags: 历史
     文学
-series: 史书
+series: 史书系列
 index: 1
 rating: 10
-date: 03-06-2020
+date: 03-06-2022
 comments: 史家之绝唱，无韵之离骚。
 ...
 
