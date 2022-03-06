@@ -2,8 +2,8 @@
 
 ## 前置需求
 
-1. 安装 Calibre: [下载页面](https://calibre-ebook.com/download)
-  [FossHub 下载页面](https://www.fosshub.com/Calibre.html)
+1. 安装 Calibre: [下载页面](https://calibre-ebook.com/download)  
+  [FossHub 下载页面](https://www.fosshub.com/Calibre.html)  
   [GitHub 下载页面](https://github.com/kovidgoyal/calibre/releases)
   
 ## 使用说明
